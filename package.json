@@ -1,0 +1,31 @@
+{
+  "name": "ahk-action-check-readme-images",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Checks if image files referenced by a README.md exist",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "ncc build src/main.ts",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akosdudas/ahk-action-check-readme-images.git"
+  },
+  "keywords": [
+    "actions"
+  ],
+  "author": "Akos Dudas",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@types/node": "^16.11.7"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@vercel/ncc": "^0.33.4",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  }
+}

@@ -1,0 +1,5 @@
+name: "Check image files"
+description: "Checks if image files referenced by a README.md exist"
+runs:
+  using: "node16"
+  main: "dist/index.js"
